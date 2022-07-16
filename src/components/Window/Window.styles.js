@@ -10,5 +10,6 @@ export const StyledWindow = styled.div`
   flex-direction: column;
   border-radius: 25px;
   box-shadow: -3px 41px 54px -26px rgba(66, 68, 90, 1);
-  overflow: hidden
+  overflow: hidden;
+  display: ${({ isLogged }) => (isLogged ? 'none' : 'block')};
 `;
