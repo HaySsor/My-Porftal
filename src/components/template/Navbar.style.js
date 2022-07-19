@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  height: 100vh;
-  background-color: #FBFCFF;
+ display: grid;
+ height: 100vh;
+ grid-template-columns: 150px 1fr;
 `;

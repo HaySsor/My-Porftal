@@ -11,5 +11,5 @@ export const StyledWindow = styled.div`
   border-radius: 25px;
   box-shadow: -3px 41px 54px -26px rgba(66, 68, 90, 1);
   overflow: hidden;
-  display: ${({ isLogged }) => (isLogged ? 'none' : 'block')};
+  display: ${({ isLogged }) => (isLogged ? 'none' : 'flex')};
 `;

@@ -2,7 +2,7 @@ import { StyledForm } from './Form.style';
 import React, { useState, useContext } from 'react';
 import { UserContext } from 'provider/UserProvider';
 
-function Form({ onData }) {
+function Form() {
   const [error, setError] = useState({
     login: false,
     password: false,
@@ -11,6 +11,7 @@ function Form({ onData }) {
     login: '',
     password: '',
   });
+
   const { heandleUserDate } = useContext(UserContext);
 
   const hendleInput = (e) => {
@@ -27,6 +28,7 @@ function Form({ onData }) {
     if (fromValue.login.trim().length > 0) {
       if (fromValue.password.trim().length > 5) {
         heandleUserDate(fromValue);
+
         setFromValue({
           login: '',
           password: '',
